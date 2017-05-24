@@ -2,14 +2,12 @@
 (function () {
     'use strict';
 
-    var app = angular.module('app',[]);// ['ngRoute']
-
-
-
-     //   .config(config)
+   angular.module('app',['ngRoute'])
+         .config(config)
+         .run(run);
 
  })();
-/*
+
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config($routeProvider, $locationProvider) {
     $routeProvider
@@ -20,7 +18,7 @@ function config($routeProvider, $locationProvider) {
      })
 
     console.log('config..');
-}*/
+}
 
 function run(){
      console.log('running..');
