@@ -7,7 +7,7 @@ dal.connect();
 var controller = require('express')();
 
 controller.get('/', function (req, res) {
-    res.send('Hello World!')
+    res.sendfile(__dirname + '/app/index.html');
 })
 
 controller.listen(3000, function () {
