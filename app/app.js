@@ -12,8 +12,8 @@ config.$inject = ['$routeProvider', '$locationProvider'];
 function config($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            controller: 'RegistrationController',
-            templateUrl: 'registeration/registeration.html',
+            controller: 'regController',
+            templateUrl: 'registration/registration.html',
             controllerAs: 'vm'
      })
 
