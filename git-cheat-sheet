@@ -3,3 +3,5 @@ git add .  - add all
 git commit -m "your message" -- commit to local repository
 git rm -r --cached .idea -- example remove directory from repository.
 
+git commit -a -m "renamed view"  -- a renamed view is added + old is deleted. for some reason it does not add the deleted one. -a forces this to be addded.
+
