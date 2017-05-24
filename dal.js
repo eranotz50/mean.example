@@ -1,23 +1,23 @@
+(function server_dal(){
+    var mongoose = require('mongoose');
+    mongoose.connect('mongodb://localhost/test');
+    var db = mongoose.connection;
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
-var db = mongoose.connection;
-
-db.on('error', console.error.bind(console, 'connection error:'));
-
-
-var dal = (function(){
-   return{
-
-       connect : function(){
-           db.once('open', function() {
-               console.log('your connected');
-           });
-       }
-   }
+    db.on('error', console.error.bind(console, 'connection error:'));
 
 
+    var dal = (function(){
+        return{
+
+            connect : function(){
+                db.once('open', function() {
+                    console.log('your connected');
+                });
+            }
+        }
+
+    })();
+
+
+    module.exports = dal;
 })();
-
-
-module.exports = dal;

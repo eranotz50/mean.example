@@ -1,6 +1,5 @@
 console.log('server running...');
 
-
 var dal = require('./dal');
 dal.connect();
 
