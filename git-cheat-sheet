@@ -1,0 +1,5 @@
+git status - local non commited
+git add .  - add all
+git commit -m "your message" -- commit to local repository
+git rm -r --cached .idea -- example remove directory from repository.
+
